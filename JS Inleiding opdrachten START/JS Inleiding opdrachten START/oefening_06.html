@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>De Javascript-telmachine</h1>
+    <div id="divResult"></div>
+    <script>
+        getal1=prompt('Geef een eerste getal in:','getal 1');
+        getal2=prompt('Geef een tweede getal in:','getal 2');
+
+        let totaal=parseInt(getal1)+parseInt(getal2);
+
+        let tekst=getal1+' plus '+getal2+'='+totaal;
+
+        document.getElementById("divResult").innerHTML=tekst;
+        // document.write(getal1+' plus '+getal2+'='+totaal);
+    </script>
+</body>
+</html>

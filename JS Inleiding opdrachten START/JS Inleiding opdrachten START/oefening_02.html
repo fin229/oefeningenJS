@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+  <pre>
+    <script>
+        let getal=0;
+        let teller=10;
+        let naam="Jan";
+        let kleiner=true;
+        let ok=false;
+
+       getal+=10;
+       temp="getal="+getal+"\n";
+       
+       teller++;
+       temp+="teller="+teller+"\n";
+
+       getal+=teller;
+       temp+="getal+teller="+getal+"\n";
+
+       getal++;
+       temp+="getal++ ="+getal+"\n"
+
+       kleiner=(getal<20);
+       temp+="kleiner="+kleiner+"\n"
+
+       ok=(naam!="jan")&&kleiner;
+       temp+="ok="+ok+"\n";
+       
+       document.write('<pre>',temp,'</pre>')
+    </script>
+  </pre>
+  <pre></pre>
+</body>
+</html>
