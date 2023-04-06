@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let invoer=prompt("Geef een getal in tussen 10 en 20");
+        let getal=parseFloat(invoer);
+
+        switch (true) {
+            case getal<10:
+                alert('Dit getal '+getal+' is kleiner dan 10!');
+                break;
+            
+            case getal>20:
+                alert('Dit getal '+getal+' is groter dan 20!');
+                break;
+
+            default:
+                alert('Het kwadraat van getal '+getal+' is '+Math.pow(getal,2));
+                break;
+        
+        }
+    </script>
+</body>
+</html>

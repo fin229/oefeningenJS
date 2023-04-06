@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let getal1=parseFloat(prompt('Geef een eerste getalin:','Getal 1'));
+        let getal2=parseFloat(prompt('Geef een tweede getal in:','Getal 2'));
+        let getal3=parseFloat(prompt('Geef een derde getal in:','Getal 3'));
+        
+        let kleinste,middelste,grootste;
+
+        if (getal1<getal2) {
+            if(getal1<getal3){
+               kleinste=getal1
+             if (getal2<getal3) {
+                middelste=getal2;
+                grootste=getal3;
+             }
+                else{
+                middelste=getal3;
+                grootste=getal2;
+                }
+            
+            }            
+            
+            else{
+                kleinste=getal3;
+                middelste=getal1;
+                grootste=getal2;
+            }
+        }
+        else{
+            if (getal2<getal3) {
+              kleinste=getal2;
+              if (getal1<getal3) {
+                grootste=getal3;
+                middelste=getal1;
+              }  
+              else{
+                grootste=getal1;
+                middelste=getal3;
+              }
+            }
+            else{
+                kleinste=getal3;
+                middelste=getal2;
+                grootste=getal1;
+            }
+        }
+        alert('Kleinste:'+kleinste+'\n'+'Middelste'+middelste+'\n'+'Grootste'+grootste+'\n');
+
+
+    </script>
+</body>
+</html>
